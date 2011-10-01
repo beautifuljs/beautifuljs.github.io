@@ -1,0 +1,130 @@
+<!doctype html>
+
+<meta charset="utf-8" />
+
+{% if page.title %}
+	<title>{{page.title}} - Beautiful JS</title>
+{% else %}
+	<title>Beautiful JS</title>
+{% endif %}
+
+<link href="http://feeds.feedburner.com/BeautifulJS" rel="alternate" title="Ugly JS" type="application/atom+xml" />
+
+<link rel="stylesheet" href="/assets/b.css" />
+<link rel="stylesheet" href="/assets/pyg.css" />
+
+<h1><a href="/">Beautiful JS</a></h1>
+
+<div id="c">
+
+	<p class="info">
+		JavaScript that belies the common conception of beauty
+	</p>
+
+	{{ content }}
+	
+</div>
+
+<div id="wt">
+	<p>
+		<a href="http://feeds.feedburner.com/BeautifulJS">Subscribe</a> or <a href="http://twitter.com/BeautifulJS">follow @BeautifulJS</a>!
+		<br/>.........<br/>
+		<a href="https://github.com/beautifuljs/beautifuljs.github.com">Fork</a> then send a pull request to contribute.
+	</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script src="/assets/b.js"></script>
+
+<script>
+
+	(function(){
+
+		var grid = new BGrid([
+			[1,1,1,1,1],
+			[1,0,1,0,1],
+			[1,1,1,1,1],
+			[],
+			[1,1,1,1,1],
+			[1,0,1,0,1],
+			[1,0,1,0,1],
+			[],
+			[1,1,1,1,1],
+			[1,0,1,0,0],
+			[1,1,1,1,1],
+			[],
+			[1,1,1,1,1],
+			[0,0,0,0,1],
+			[1,1,1,1,1],
+			[],
+			[1],
+			[1,1,1,1,1],
+			[1],
+			[],
+			[1,0,0,0,1],
+			[1,1,1,1,1],
+			[1,0,0,0,1],
+			[],
+			[1,1,1,1,1],
+			[1,0,1,0,0],
+			[1,0,1,0,0],
+			[],
+			[1,1,1,1,1],
+			[0,0,0,0,1],
+			[1,1,1,1,1],
+			[],
+			[1,1,1,1,1],
+			[0,0,0,0,1],
+			[0,0,0,0,1],
+			[],
+			[],
+			[0,0,0,0,1],
+			[1,0,0,0,1],
+			[1,1,1,1,1],
+			[],
+			[1,1,1,0,1],
+			[1,0,1,0,1],
+			[1,0,1,1,1],
+			[],
+			[],
+			[0,1,0,1,1],
+			[],
+			[1,1,1,1,1],
+			[1,0,0,0,1],
+			[0,1,1,1,0]
+
+		]);
+
+		$('h1 a').wrapInner(
+			$('<span>').hide()
+		).append(grid.canvas);
+
+		setTimeout(function(){
+			grid.animate(1);
+		}, 500);
+
+		$(grid.canvas).hover(function(){
+			grid.stop();
+			grid.animate(0);
+		}, function(){
+			grid.stop();
+			grid.animate(1);
+		})
+
+	}());
+
+</script>
+
+<script>
+
+	var _gaq = [['_setAccount', 'UA-3768993-8'], ['_trackPageview']];
+
+	(function(ga, s) {
+		ga.src = 'http://www.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(ga, s);
+	}(
+		document.createElement('script'),
+		document.getElementsByTagName('script')[0]
+	));
+
+</script>

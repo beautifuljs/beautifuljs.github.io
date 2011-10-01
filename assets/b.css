@@ -1,0 +1,138 @@
+body {
+	background: #292929 url(/assets/bg.png) center 0;
+	color: #111;
+	font-family: calibri,tahoma,arial,sans-serif;
+}
+
+#c {
+	min-width: 700px;
+	width: 70%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2.4em;
+	text-align: center;
+}
+
+h1 canvas {
+	margin: 1px 0 0 1px;
+}
+
+h1 a {
+	text-shadow:
+		-1px -1px 1px #111,
+		1px -1px 0 #FF8000,
+		-1px 1px 1px #EEE,
+		1px 1px 1px #EEE;
+	color: inherit;
+	font-weight: normal;
+	letter-spacing: 0;
+	font-family: "Consolas","Lucida Console",Courier,mono;
+}
+
+h1 a:hover, h1 a:focus {
+	text-decoration: none;
+	text-shadow: 
+	-1px -1px 1px #111,
+	1px -1px 0 #FFF,
+	-1px 1px 1px #EEE,
+	1px 1px 1px #EEE;
+}
+
+a {
+	color: #0c90ff;
+	text-shadow: 1px 0 0 rgba(255,255,255,.5);
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	text-decoration: underline;
+	color: #0077db;
+}
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	padding: 10px;
+}
+
+p code, li code, h2 code {
+	padding: 3px;
+}
+
+pre, code {
+	font-size: .93em;
+	font-family: "Consolas","Lucida Console",Courier,mono;
+}
+
+pre code {
+	box-shadow: none;
+}
+
+.info {
+	text-align: center;
+	color: #111;
+	font-style: italic;
+	font-size: 1.2em;
+	margin-bottom: 40px;
+}
+
+/* POST */
+
+.posts {
+	border-top: 2px solid #FFF;
+}
+
+.post {
+	padding: 20px;
+	background: #FFF;
+	background: rgba(163, 213, 255, .25);
+}
+
+.posts .post {
+	border-bottom: 2px solid #FFF;
+}
+
+.post p {
+	padding: .7em 0;
+	margin: 0;
+}
+
+.body {
+	padding: 15px;
+}
+
+.meta {
+	display: block;
+	text-align: right;
+	padding: 7px 7px 7px 27px;
+	line-height: 1em;
+	background: rgba(255, 255, 255, .55);
+	border-bottom: 3px solid rgba(163, 213, 255, .55);
+	margin: 0 0 0 -20px;
+}
+
+h2.title {
+	font-weight: 700;
+	font-size: 1.2em;
+	text-align: left;
+}
+
+h2.title a {
+	color: #111;
+}
+
+.pagination {
+	text-align: center;
+	padding: 20px 0;
+}
+
+/* FOOT */
+
+#wt {
+	text-align: center;
+	margin-top: 40px;
+}
