@@ -1,6 +1,11 @@
 (function(){
 
 	this.BGrid = BGrid;
+
+	/**
+	 * BGrid
+	 * @arg cols a 2d array (a[col][row]) defining cell presence
+	 */
 	
 	function BGrid(cols) {
 
