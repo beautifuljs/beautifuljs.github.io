@@ -14,3 +14,5 @@ _.isNaN = function(obj) {
 {% endhighlight %}
 
 See [`_.isNaN` on github](https://github.com/documentcloud/underscore/blob/master/underscore.js#L691).
+
+It's also worth mentioning [Underscore's annotated source](http://documentcloud.github.com/underscore/docs/underscore.html). 

@@ -2,6 +2,8 @@ body {
 	background: #FFF url(/assets/bg.png) center 0;
 	color: #111;
 	font-family: calibri,tahoma,arial,sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 #c {
@@ -14,6 +16,8 @@ body {
 h1 {
 	font-size: 2.4em;
 	text-align: center;
+	margin: 0;
+	padding: 21px 0 0 1px;
 }
 
 h1 canvas {
