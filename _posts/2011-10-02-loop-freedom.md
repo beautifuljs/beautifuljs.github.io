@@ -13,19 +13,25 @@ for (var i = 0; i < array.length; i++) {}
 
 ... that's how boring people write loops. "But", you say, "That's convention and therefore is the most readable format".
 
-True, but let's be honest: variations of the above aren't exactly challenging to grasp, and once you know a truthy expression from a falsey one, and the difference between prefix (`++i`) and postfix (`i++`) incrementers, there really is no point in holding back.
+True, but let's be honest: variations of the above aren't exactly challenging to grasp, and once you know a truthy expression from a falsey one, and the difference between [prefix](http://bclary.com/2004/11/07/#a-11.4.4) (`++i`) and [postfix](http://bclary.com/2004/11/07/#a-11.3.1) (`i++`) incrementers, there really is no point in holding back.
 
-Assert your creative freedom with your loops!
+You don't have to be entirely conventional.
 
 {% highlight javascript %}
 for (var i = 0, l = a.length; i < l; i++); // cached length
+{% endhighlight %}
+{% highlight javascript %}
 for (var i = -1, l = a.length; ++i < l;); // bundled condition (increment+test)
+{% endhighlight %}
+{% highlight javascript %}
 for (var i = a.length; i--;); // reverse loop 
-
+{% endhighlight %}
+{% highlight javascript %}
 while (node.firstChild) {
 	node.removeChild(node.firstChild);
 }
-
+{% endhighlight %}
+{% highlight javascript %}
 // Do something with node and its following siblings
 do { } while (node = node.nextSibling);
 {% endhighlight %}
