@@ -27,8 +27,9 @@ for (var i = -1, l = a.length; ++i < l;); // bundled condition (increment+test)
 for (var i = a.length; i--;); // reverse loop 
 {% endhighlight %}
 {% highlight javascript %}
+// Removing a node's children
 while (node.firstChild) {
-	node.removeChild(node.firstChild);
+    node.removeChild(node.firstChild);
 }
 {% endhighlight %}
 {% highlight javascript %}
