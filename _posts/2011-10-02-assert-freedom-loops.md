@@ -30,13 +30,14 @@ while (node.firstChild) {
 do { } while (node = node.nextSibling);
 {% endhighlight %}
 
-The body is expendable. You can get by with just the expression in `while(...)`:
+A loop's body is expendable too:
 
 {% highlight javascript %}
 while (
     div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->',
     all[0]
 );
-// From: https://gist.github.com/527683
 {% endhighlight %}
+
+That last one's from here: [https://gist.github.com/527683](https://gist.github.com/527683)
 
