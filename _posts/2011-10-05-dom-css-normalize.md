@@ -1,5 +1,5 @@
 ---
-title: DOM style normalization
+title: DOM CSS normalization
 layout: post
 author: James
 authorurl: http://padolsey.net
