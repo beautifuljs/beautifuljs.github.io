@@ -1,7 +1,7 @@
 body {
 	background: #FFF url(/assets/bg.png) center 0;
 	color: #111;
-	font-family: calibri,tahoma,arial,sans-serif;
+	font-family: calibri,tahoma,helvetica,arial,sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -33,7 +33,7 @@ h1 a {
 	color: inherit;
 	font-weight: normal;
 	letter-spacing: 0;
-	font-family: "Consolas","Lucida Console",Courier,mono;
+	font-family: "Menlo", "Bitstream Vera Sans Mono", "Consolas", "Lucida Console", monospace, mono;
 }
 
 h1 a:hover, h1 a:focus {
@@ -69,7 +69,7 @@ p code, li code, h2 code {
 
 pre, code {
 	font-size: .93em;
-	font-family: "Consolas","Lucida Console",Courier,mono;
+	font-family: "Menlo", "Bitstream Vera Sans Mono", "Consolas", "Lucida Console", monospace, mono;
 }
 
 pre code {
